@@ -1,0 +1,13 @@
+E:\github\BitOrMagnetDownload\Lighter\Lighter\bin\Debug\Lighter.exe.config
+E:\github\BitOrMagnetDownload\Lighter\Lighter\bin\Debug\Lighter.exe
+E:\github\BitOrMagnetDownload\Lighter\Lighter\bin\Debug\Lighter.pdb
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.csprojResolveAssemblyReference.cache
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.Form1.resources
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.Properties.Resources.resources
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.csproj.GenerateResource.cache
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.csproj.CoreCompileInputs.cache
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.exe
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.pdb
+E:\github\BitOrMagnetDownload\Lighter\Lighter\bin\Debug\BitTorrentTool.dll
+E:\github\BitOrMagnetDownload\Lighter\Lighter\bin\Debug\BitTorrentTool.pdb
+E:\github\BitOrMagnetDownload\Lighter\Lighter\obj\Debug\Lighter.csproj.CopyComplete

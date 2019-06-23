@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using BitTorrentTool;
+using System.Net.Sockets;
+using System.Security.Cryptography;
 
 namespace Lighter
 {
@@ -32,36 +35,9 @@ namespace Lighter
             string s = sr.ReadToEnd();
             FileStream file = File.OpenRead(filepath);
             BinaryReader binaryReader = new BinaryReader(file);
-            char next = (char)binaryReader.PeekChar();
-            object fileInfo;
-            switch (next)
-            {
-                case 'i':
-                    // Integer
-                    binaryReader.ReadChar();
-                    fileInfo = BencodeUtil.Bint(binaryReader); break;
-                case 'l':
-                    // List
-                    binaryReader.ReadChar();
-                    fileInfo = BencodeUtil.Blist(binaryReader); break;
-                case 'd':
-                    // Dictionary
-                    binaryReader.ReadChar();
-                    fileInfo = BencodeUtil.Bdictionary(binaryReader); break;
-                case '0':
-                case '1':
-                case '2':
-                case '3':
-                case '4':
-                case '5':
-                case '6':
-                case '7':
-                case '8':
-                case '9':
-                    fileInfo = BencodeUtil.Bstring(binaryReader); break;
-                default:
-                    fileInfo = null; break;
-            }
+            TorrentFileInfo torrentFileInfo = BencodeUtil.GetTorrentFileInfo(binaryReader);
+            SHA1 hash = new SHA1CryptoServiceProvider();
+
         }
     }
 }
